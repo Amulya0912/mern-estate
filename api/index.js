@@ -1,7 +1,17 @@
 import express from "express";
 import mongoose from "mongoose";
+//import dotenv from "dotenv";
+//dotenv.config();
 
-mongoose.connect("mongodb+srv://amulya92004:Ammu@0912@cluster0.bcaec.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+//console.log("MongoDB URI:", process.env.MONGO);
+mongoose.connect("mongodb+srv://amulya2004:Amulya2004@cluster0.qfupa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    .then(() => {
+    console.log("Connected to MongoDB.....");
+    })
+    .catch((err) => {
+    console.log(err);
+   });
+
 const app = express();
 app.listen(3000, () => {
     console.log("Server is running on port 3000 !!! ");
