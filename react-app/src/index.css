@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.heading{
-  color:red;
+
+body{
+  background-color:rgb(241, 245, 241);
+}
+
+input,textarea,button{
+  width:30%;
+  height:50px;
 }
